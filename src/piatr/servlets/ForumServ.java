@@ -37,7 +37,7 @@ public class ForumServ extends HttpServlet {
         out.println("<body>");
         out.println("<div id='forum'>");
         for (Message mes : messages) {
-            out.println("<p><strong>" + mes.getNick() + ": </strong>" + mes.getDate() + "</p>");
+            out.println("<p><strong>" + mes.getNick() + ": </strong>" + mes.getDate().toString() + "</p>");
             out.println("<p>" + mes.getMessage() + "</p>");
             out.println("<hr>");
         }
