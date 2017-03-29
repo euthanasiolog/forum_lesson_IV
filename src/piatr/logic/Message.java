@@ -2,6 +2,7 @@ package piatr.logic;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 
 /**
  * Created by piatr on 27.03.17.
@@ -9,35 +10,33 @@ import java.time.LocalDateTime;
 public class Message {
     private String message;
     private String nick;
-    private LocalDateTime date;
-
+    private LocalDateTime date = LocalDateTime.now();
+    DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm");
+    String formattedDate;
     public Message(String message, String nick) {
         this.message = message;
         this.nick = nick;
-        this.date = LocalDateTime.now();
+        this.formattedDate = date.format(formatter);
     }
 
     public LocalDateTime getDate() {
         return date;
     }
 
-    public void setDate(LocalDateTime date) {
-        this.date = date;
+
+    public String getFormattedDate() {
+        return formattedDate;
     }
 
     public String getMessage() {
         return message;
     }
 
-    public void setMessage(String message) {
-        this.message = message;
-    }
+
 
     public String getNick() {
         return nick;
     }
 
-    public void setNick(String nick) {
-        this.nick = nick;
-    }
+
 }

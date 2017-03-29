@@ -37,7 +37,7 @@ public class ForumServ extends HttpServlet {
         out.println("<body>");
         out.println("<div id='forum'>");
         for (Message mes : messages) {
-            out.println("<p><strong>" + mes.getNick() + ": </strong>" + mes.getDate().toString() + "</p>");
+            out.println("<p><strong>" + mes.getNick() + ": </strong>" + mes.getFormattedDate() + "</p>");
             out.println("<p>" + mes.getMessage() + "</p>");
             out.println("<hr>");
         }
@@ -68,7 +68,7 @@ public class ForumServ extends HttpServlet {
         out.println("<div id='forum'>");
         for (Message mes : messages){
             if (mes.getNick().equals(getMessages)){
-                out.println("<p><strong>" + mes.getNick() + ": </strong>" + mes.getDate() + "</p>");
+                out.println("<p><strong>" + mes.getNick() + ": </strong>" + mes.getFormattedDate() + "</p>");
                 out.println("<p>" + mes.getMessage() + "</p>");
                 out.println("<hr>");
             }
@@ -89,7 +89,7 @@ public class ForumServ extends HttpServlet {
         out.println("<body>");
         out.println("<div id='forum'>");
         for (Message ms: messages){
-            out.println("<p><strong>"+ms.getNick()+": </strong>"+ms.getDate()+"</p>");
+            out.println("<p><strong>"+ms.getNick()+": </strong>"+ms.getFormattedDate()+"</p>");
             out.println("<p>"+ms.getMessage()+"</p>");
             out.println("<hr>");
         }
