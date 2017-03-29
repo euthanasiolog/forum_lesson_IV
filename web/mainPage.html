@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello!</title>
+</head>
+<body>
+<label for="form"><strong>Добро пожаловать!</strong></label><br>
+    <form id="form" action="http://localhost:8080/fs.do" method="post">
+        <label for="nick">Ваш никнейм: </label><br>
+        <input name="nick" id="nick" type="text"><br>
+        <label for="message">Ваш комментарий: </label><br>
+        <input name="message" id="message" type="text"><br>
+        <input type="submit">
+    </form>
+    <form action="http://localhost:8080/fs.do" method="post">
+        <label for="getMessage">Посмотреть комментарии от: </label>
+        <input name="getMessage" id="getMessage" type="text">
+        <input type="submit">
+    </form>
+</body>
+</html>
