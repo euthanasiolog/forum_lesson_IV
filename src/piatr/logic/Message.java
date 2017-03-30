@@ -1,6 +1,5 @@
 package piatr.logic;
 
-import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
@@ -17,10 +16,6 @@ public class Message {
         this.message = message;
         this.nick = nick;
         this.formattedDate = date.format(formatter);
-    }
-
-    public LocalDateTime getDate() {
-        return date;
     }
 
 

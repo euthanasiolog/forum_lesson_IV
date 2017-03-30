@@ -1,3 +1,6 @@
+/**
+ * Created by piatr on 27.03.17.
+ */
 package piatr.servlets;
 
 import piatr.logic.Message;
@@ -10,9 +13,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.ArrayList;
 
-/**
- * Created by piatr on 27.03.17.
- */
+
 public class ForumServ extends HttpServlet {
     private ArrayList <Message> messages = new ArrayList<>();
     private static final String MESSAGE = "message";
