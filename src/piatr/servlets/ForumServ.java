@@ -43,7 +43,7 @@ public class ForumServ extends HttpServlet {
             out.println("<hr>");
         }
         out.println("<hr><br><hr>");
-        out.println("<form id=\"form\" action=\"http://localhost:8080/fs.do\" method=\"post\">");
+        out.println("<form id=\"form\" action=\"/fs.do\" method=\"post\">");
         out.println("<label for=\"nick\">Nickname: </label><br>");
         out.println(" <input name=\"nick\" id=\"nick\" type=\"text\"><br>");
         out.println("<label for=\"message\">Your comment: </label><br>");
@@ -95,7 +95,7 @@ public class ForumServ extends HttpServlet {
             out.println("<hr>");
         }
         out.println("<hr><br><hr>");
-        out.println("<form id=\"form\" action=\"http://localhost:8080/fs.do\" method=\"post\">");
+        out.println("<form id=\"form\" action=\"/fs.do\" method=\"post\">");
         out.println("<label for=\"nick\">Nickname: </label><br>");
         out.println(" <input name=\"nick\" id=\"nick\" type=\"text\"><br>");
         out.println("<label for=\"message\">Your comment: </label><br>");
