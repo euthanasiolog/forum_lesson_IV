@@ -16,20 +16,13 @@ public class Message {
         this.formattedDate = LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm"));
     }
 
-
-    public String getFormattedDate() {
-        return formattedDate;
-    }
+    public String getFormattedDate() { return formattedDate; }
 
     public String getMessage() {
         return message;
     }
 
-
-
     public String getNick() {
         return nick;
     }
-
-
 }
